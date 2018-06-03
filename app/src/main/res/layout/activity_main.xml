@@ -1,133 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@drawable/basketballsmall"
-    >
+    android:layout_height="match_parent"
+    android:background="@drawable/basketballsmall">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
         android:layout_alignParentTop="true"
-        android:layout_margin="@dimen/marginBelow">
+        android:layout_margin="@dimen/marginBelow"
+        android:orientation="horizontal">
         <!-- Team A XML -->
         <LinearLayout
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:orientation="vertical"
             android:padding="8dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginBelow"
                 android:text="@string/team_a"
+                android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textSize="@dimen/teamNameSize"
-                android:textAlignment="center"
-                android:layout_marginBottom="@dimen/marginBelow"
-                android:textColor="#616161"
-                />
+                android:textColor="@color/_teamNameColor"
+                android:textSize="@dimen/teamNameSize" />
             <TextView
+                android:id="@+id/scoreViewA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginBelow"
                 android:text="@string/_0"
-                android:textSize="@dimen/scoreTextSize"
-                android:textColor="@android:color/black"
-                android:textStyle="bold"
                 android:textAlignment="center"
-                android:layout_marginBottom="@dimen/marginBelow"
-                android:id="@+id/scoreViewA"/>
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/scoreTextSize"
+                android:textStyle="bold" />
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_3_points"
-                android:layout_marginBottom="@dimen/marginBelow"
                 android:id="@+id/threeForA"
-                android:background="@color/buttomPrimary"
-                />
-            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/_2_points"
                 android:layout_marginBottom="@dimen/marginBelow"
+                android:background="@color/buttomPrimary"
+                android:text="@string/_3_points" />
+            <Button
                 android:id="@+id/twoForA"
-                android:background="@color/buttomPrimary"
-                />
-            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/free_throw"
                 android:layout_marginBottom="@dimen/marginBelow"
-                android:id="@+id/oneForA"
                 android:background="@color/buttomPrimary"
-                />
-
+                android:text="@string/_2_points" />
+            <Button
+                android:id="@+id/oneForA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginBelow"
+                android:background="@color/buttomPrimary"
+                android:text="@string/free_throw" />
         </LinearLayout>
-
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="#757575"/>
+            android:background="@color/_dividerColor" />
         <!-- Team B XML -->
         <LinearLayout
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:orientation="vertical"
             android:padding="8dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginBelow"
                 android:text="@string/team_b"
+                android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textSize="@dimen/teamNameSize"
-                android:textAlignment="center"
-                android:layout_marginBottom="@dimen/marginBelow"
-                android:textColor="#616161"
-                />
+                android:textColor="@color/_teamNameColor"
+                android:textSize="@dimen/teamNameSize" />
+
             <TextView
+                android:id="@+id/scoreViewB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginBelow"
                 android:text="@string/_0"
-                android:textSize="@dimen/scoreTextSize"
-                android:textColor="@android:color/black"
-                android:textStyle="bold"
                 android:textAlignment="center"
-                android:layout_marginBottom="@dimen/marginBelow"
-                android:id="@+id/scoreViewB"/>
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/scoreTextSize"
+                android:textStyle="bold" />
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_3_points"
-                android:layout_marginBottom="@dimen/marginBelow"
                 android:id="@+id/threeForB"
-                android:background="@color/buttomPrimary"
-                />
-            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/_2_points"
                 android:layout_marginBottom="@dimen/marginBelow"
+                android:background="@color/buttomPrimary"
+                android:text="@string/_3_points" />
+
+            <Button
                 android:id="@+id/twoForB"
-                android:background="@color/buttomPrimary"
-                />
-            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/free_throw"
                 android:layout_marginBottom="@dimen/marginBelow"
-                android:id="@+id/oneForB"
                 android:background="@color/buttomPrimary"
-                />
+                android:text="@string/_2_points" />
+
+            <Button
+                android:id="@+id/oneForB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginBelow"
+                android:background="@color/buttomPrimary"
+                android:text="@string/free_throw" />
 
         </LinearLayout>
     </LinearLayout>
     <Button
+        android:id="@+id/resetBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="@string/_reset"
         android:background="@android:color/holo_red_light"
-        android:id="@+id/resetBtn"/>
+        android:text="@string/_reset" />
 </RelativeLayout>

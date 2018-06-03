@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#00796B</color>
     <color name="colorAccent">#FFF</color>
     <color name="buttomPrimary">#FFC107</color>
+    <color name="_teamNameColor">#616161</color>
+    <color name="_dividerColor">#757575</color>
 </resources>

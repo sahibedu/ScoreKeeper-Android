@@ -1,5 +1,6 @@
 package tech.rtsproduction.scorekeeper;
 
+import android.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,9 +9,17 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Integer scoreA=0,scoreB=0;
-    TextView scoreForA,scoreForB;
-    Button threeA,twoA,oneA,threeB,twoB,oneB,resetBtn;
+    Integer scoreA=0;
+    Integer scoreB=0;
+    private TextView scoreForA;
+    private TextView scoreForB;
+    private Button threeA;
+    private Button twoA;
+    private Button oneA;
+    private Button threeB;
+    private Button twoB;
+    private Button oneB;
+    private Button resetBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
